@@ -3,7 +3,7 @@ from database.db import db
 
 class Carros(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    n_contacto = db.Column(db.Integer, db.ForeignKey("contactos.id"))
+    contacto = db.Column(db.Integer, db.ForeignKey("contactos.id"))
     placa = db.Column(db.Integer, nullable=False)
     marca = db.Column(db.String(50))
     modelo = db.Column(db.String(50))

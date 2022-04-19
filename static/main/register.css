@@ -10,21 +10,22 @@ body{
 
 .seccion-contacto {
     background-color: rgb(193, 193, 193);
+    border-radius: 15px
 
 }
 .contacto-h h2{
     margin-left: 50px;
     font-size: 5em;
     color: black;
-    margin-bottom: 4px;
-
+    margin-top: 100px;
+    border-radius: 10px
 }
 .contacto-h h3{
     margin-left: 140px;
-    margin-top: 0;
+    margin-top: 10px;
     font-size: 3em;
     color: black;
-
+    border-radius: 10px
 }
 
 
@@ -32,6 +33,7 @@ body{
 .container-contact {
     padding: 3em;
     margin: 0 auto;
+    border-radius: 10px
 }
 
 .container-contact img{
@@ -39,12 +41,13 @@ body{
     height: 700px;
     bottom: 0;
     margin-left: 190px;
-    
+    border-radius: 10px
 }
 
 .contacto-form h4{
     color: aliceblue;
     font-size: 3.9em;
+    border-radius: 10px
 }
 
 .form {
@@ -52,6 +55,7 @@ body{
     flex-direction: column;
     width: 30 ww;
     margin-top: 2em;    
+    border-radius: 10px
 }
 
 .form input{
@@ -61,6 +65,7 @@ body{
     border: none;
     border-bottom: 1px solid aliceblue;
     color: aliceblue;
+    border-radius: 10px
 }
 
 .form textarea{
@@ -125,13 +130,17 @@ a {
     padding: 5px ;
     font-size: 3em;
     margin-left: 100px;
+    margin-top: 100px;
+    padding-top: 0px;
 }
 
 
 a:hover{
-    color: rgb(71, 158, 221);
+    color: rgb(0, 0, 0);
     transition: ease-in .2s;
     font-size: 3.5em;
     border: none;
     border-radius: 8px;  
-}    
+    background-color: rgb(255, 255, 255);
+    margin-top: 100px;
+}

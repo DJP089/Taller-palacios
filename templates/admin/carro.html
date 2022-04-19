@@ -1,7 +1,7 @@
 {% extends 'layout.html' %}
 {% block title %}register page{% endblock %}
 {% block contents %}
-<link rel="stylesheet" href="./static/admin/carro.css">
+<link rel="stylesheet" href="../static/admin/carro.css">
 <div class="seccion-contacto">
     <div class="contacto-h">
      <h2>Bienvenid@</h2>
@@ -12,7 +12,7 @@
          
         <div class="contacto-form">
             <br>
-            <form class="form" action="{{ url_for('dash.carro') }}" method="post">
+            <form class="form" action="{{ url_for('dash.carro', user=user) }}" method="post">
                 {{ form.hidden_tag() }}
                 {{ form.placa.label }}
                 {{ form.placa }}
@@ -37,5 +37,5 @@
 </div>
 
 
-<a href="{{ url_for('dash.home') }}">Home</a>
+<a href="{{ url_for('dash.dashboard') }}">Home</a>
 {% endblock %}

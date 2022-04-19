@@ -1,7 +1,48 @@
-{% extends './main/base_main.html' %}
+
 
 {% block title %}home page{% endblock %}
 
+
+
 {% block contents %}
-<a href="{{ url_for('dash.carro') }}">carro</a>
+<link rel="stylesheet" href="../static/admin/dash.css">
+
+<div>
+    <br>
+    <br>
+
+        <h2 class="titulo">Aqui estan todos los usuarios registrados</h2>
+        
+    <div>
+        <table id="messages">
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Telefono</th>
+                <th>DUI</th>
+                <th>Rango</th>
+            </tr>
+            {% for contact in listado %}
+            <tr>
+                <td>{{ contact.id }}</td>
+                <td>{{ contact.nombres  }}</td>
+                <td>{{ contact.apellidos  }}</td>
+                <td>{{ contact.telefono  }}</td>
+                <td>{{ contact.dui  }}</td>
+                <td>{{ contact.rank  }}</td>
+                <td><a href="{{  url_for('dash.carro', user=contact.id) }}">Añade un carro</a></td>
+            </tr>
+            {% endfor %}
+            
+        </table>
+         
+    </div>
+    
+</div>
+
+
 {% endblock %}
+
+
+ 
