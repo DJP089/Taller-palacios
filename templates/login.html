@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+{% block title %}login page{% endblock %}
+{% block contents %}
+<link rel="stylesheet" href="./static/main/login.css">
+<div class="seccion-contacto">
+    <div class="contacto-h">
+     <h2>Bienvenid@</h2>
+     <h3>aquí puedes iniciar sesión</h3> 
+     <div class="divider"></div> 
+    </div>
+    <div class="container-contact" >
+         
+        <div class="contacto-form">
+            <br>
+            <form class="form" action="{{ url_for('site.login') }}" method="post">
+                {{ form.hidden_tag() }}
+                {{ form.nombres.label }}
+                {{ form.nombres }}
+                {{ form.dui.label }}
+                {{ form.dui }}
+                {{ form.submit }}
+            </form>
+            <br>
+        </div>
+    </div>
+
+</div>
+
+<a href="{{ url_for('site.register') }}">Register</a>
+<a href="{{ url_for('site.home') }}">Home</a>
+{% endblock %}

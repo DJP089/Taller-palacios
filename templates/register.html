@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+{% block title %}register page{% endblock %}
+{% block contents %}
+<link rel="stylesheet" href="./static/main/register.css">
+<div class="seccion-contacto">
+    <div class="contacto-h">
+     <h2>Bienvenid@</h2>
+     <h3>aquí puedes registrar tus datos</h3> 
+     <div class="divider"></div> 
+    </div>
+    <div class="container-contact" >
+         
+        <div class="contacto-form">
+            <br>
+            <form class="form" action="{{ url_for('site.register') }}" method="post">
+                {{ form.hidden_tag() }}
+                {{ form.nombres.label }}
+                {{ form.nombres }}
+                {{ form.apellidos.label }}
+                {{ form.apellidos }}
+                {{ form.telefono.label}}
+                {{ form.telefono }}
+                {{ form.dui.label }}
+                {{ form.dui }}
+                {{ form.submit }}
+            </form>
+            <br>
+        </div>
+    </div>
+
+</div>
+
+<a href="{{ url_for('site.login') }}">Login</a>
+<a href="{{ url_for('site.home') }}">Home</a>
+{% endblock %}

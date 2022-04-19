@@ -1,0 +1,123 @@
+{% extends './main/base_main.html' %}
+
+{% block title %}home page{% endblock %}
+
+{% block contents %}
+<link rel="stylesheet" href="./static/main/home.css">
+
+<div class="carousel">
+    <div class="carousel-inner">
+        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+        <div class="carousel-item">
+            <img src="../static/img/1.png">
+        </div>
+        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item">
+            <img src="../static/img/2.png">
+        </div>
+        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item">
+            <img src="../static/img/3.png">
+        </div>
+        <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+        <label for="carousel-2" class="carousel-control next control-1">›</label>
+        <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+        <label for="carousel-3" class="carousel-control next control-2">›</label>
+        <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+        <label for="carousel-1" class="carousel-control next control-3">›</label>
+        <ol class="carousel-indicators">
+            <li>
+                <label for="carousel-1" class="carousel-bullet">•</label>
+            </li>
+            <li>
+                <label for="carousel-2" class="carousel-bullet">•</label>
+            </li>
+            <li>
+                <label for="carousel-3" class="carousel-bullet">•</label>
+            </li>
+        </ol>
+    </div>
+</div>
+
+
+
+<!-- ESTADISTICAS -->
+
+<section class="events">
+	<div class="title">
+		<h1 id="estad">¡Que nos diferencia!</h1>
+		<div class="line"></div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<img src="../static/img/img1.png" alt="">
+			<h4>Tenemos mas de 25 anos de experiencia</h4>
+			<p>El taller palacios cuenta con mas de 25 anos de experiencia, hemos estado ubicados en Santa Tecla desde los anos 90, brindado la mejor atencion al cliente posible.</p>
+			<a href="https://www.facebook.com/tallerpalaciossv" class="ctn">Learn More</a>
+		</div>
+		<div class="col">
+			<img src="../static/img/img2.png" alt="">
+			<h4>¡Los mejores mecanicos de la zona!</h4>
+			<p>Tenemos disponible a los mejores mecnicos de la zona, ademas de esto tenemos una gran atencion al cliente, delivery de vehiculos y seguimiento en tiempo real de tu vehiculo.</p>
+			<a href="https://www.facebook.com/tallerpalaciossv" class="ctn">Learn More</a>
+		</div>
+	</div>
+</section>
+
+<section class="tours">
+	<div class="row">
+		<div class="col content-col">
+			<h1 id="ttd">¡Nuestros Servicios!</h1>
+			<div class="line"></div>
+			<p>El taller Palacios cuenta con numerosos servicios de mantenimiento correctivo y preventivo, como: cambio de Aceite, cambios de Filtros, cambio de fajas de tiempo, reparacion de aire acondicionado y mucho mas!!</p>
+			<a href="https://www.instagram.com/tallerpalaciossv/" class="ctn">Descubrelo aqui!</a>
+		</div>
+		<div class="col image-col">
+			<div class="image-gallery">
+				<img src="../static/img/img3.png" alt="">
+				<img src="../static/img/img4.png" alt="">
+				<img src="../static/img/img5.png" alt="">
+				<img src="../static/img/img6.png" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<div>
+    <h1> </h1>
+<iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d15507.181744378318!2d-89.2991965220747!3d13.67019934640368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d13.6658545!2d-89.2891717!4m5!1s0x8f632ee4ec5e3e85%3A0x9f97539844a03da!2staller%20palacios!3m2!1d13.674261999999999!2d-89.2957759!5e0!3m2!1sen!2ssv!4v1650346174983!5m2!1sen!2ssv" width="1730" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h1> </h1>
+</div>
+
+
+<section class="footer">
+	<p>Santa Tecla, La Libertad, El Salvador | Telefono:2288 8226 | Email: rodrigo.palacios@gmail.com</p>
+	<p>Copyright © 2022 Taller Palacios</p>
+</section>
+
+
+<div class="icon-bar">
+	<a href="https://www.facebook.com/tallerpalaciossv" class="facebook" target="feralbanez">
+	  Facebook <i class="fab fa-facebook-square"></i>
+	</a>
+	<a
+	  href="https://www.instagram.com/tallerpalaciossv/"
+	  class="instagram"
+	  target="feralbanz"
+	>
+	  Instagram <i class="fab fa-instagram"></i>
+	</a>
+	<a href="https://api.whatsapp.com/send?phone=50371602719" class="telegram" target="feralbanez">
+	  WhatsApp <i class="fab fa-telegram-plane"></i>
+	</a>
+
+
+</div>
+
+
+
+</body>
+</html>
+{% endblock %}

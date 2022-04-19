@@ -1,0 +1,43 @@
+
+
+{% block title %}home pagge{% endblock %}
+
+{% block contents %}
+ 
+ <div>
+    <br>
+    <br>
+
+        <h2 class="titulo">Mensajes de la comunidad</h2>
+
+    <div>
+        <table id="messages">
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Email</th>
+                <th>Mensaje</th>
+                <th>Telefono</th>
+            </tr>
+            {% for carro in carros %}
+            <tr>
+                <td>{{ carro.id}}</td>
+                <td>{{ carro.n_contacto}}</td>
+                <td>{{ carro.placa }}</td>
+                <td>{{ carro.marca}}</td>
+                <td>{{ carro.modelo }}</td>
+                <td>{{ carro.version }}</td>
+                <td>{{ carro.neumatico }}</td>
+                <td>{{ carro.color }}</td>
+                <td>{{ carro.anno }}</td>
+            </tr>
+            {% endfor %}
+            
+        </table>
+        <img src="./static/log.jpg" alt="logo personal">  
+    </div>
+    
+ </div>
+
+{% endblock contents%}

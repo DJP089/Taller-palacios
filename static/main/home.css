@@ -1,0 +1,692 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    background: url("http://digital.bnint.com/filelib/s9/photos/white_wood_4500x3000_lo_res.jpg");
+}
+
+.carousel {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 26px;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: rgb(165, 54, 54);
+    cursor: pointer;
+    display: none;
+    font-size: 70px;
+    height: 70px;
+    line-height: 60px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 70px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 5%;
+}
+
+.carousel-control.next {
+    right: 5%;
+}
+
+.carousel-control:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #428bca;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+
+
+
+
+
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgb(0, 0, 0);
+    font-family: "Open Sans", sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33),
+      -1px 0px 2px rgba(255, 255, 255, 0);
+  }
+  
+  /* Events */
+  section {
+    width: 100%;
+    margin: 80px auto;
+  }
+  
+  .events{
+    background-color: #ffd200;
+  }
+  
+  .line{
+    background-color: #000000
+  }
+  
+  .title{
+    background-color: #ffd200
+  }
+  
+  .row{
+    background-color: #ffd200
+  }
+  
+  .col{
+    background-color: #ffd200
+  }
+  
+  .titupag {
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  
+  
+  .tittle {
+    background-color: #ffd200
+  }
+  
+  .rows {
+    background-color: #000000;
+  }
+  
+  .tours {
+    background-color: #ffd200;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 4vmin;
+    color: #000000;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .events .row {
+    margin-top: 50px;
+    align-items: center;
+  }
+  h4 {
+    font-size: 3vmin;
+    color: #000000;
+    margin: 20px auto;
+    align-items: center;
+  }
+  p {
+    color: #060606;
+    padding: 0px 40px;
+    align-items: center;
+  }
+  .events .ctn {
+    margin-top: 30px;
+    align-items: center;
+  }
+  
+  .image-col {
+      width: 60%;
+  *}
+  .tours .image-gallery{
+      display: static;
+      flex-wrap: wrap;
+      width: 100%;
+      align-items: center;
+  }
+  .image-gallery img {
+      max-width: 300px;
+      margin: 10px;
+  }
+  .content-col h1{
+      font-size: 7vmin;
+      align-items: center;
+      color: #000000;
+  }
+  .content-col .line {
+      margin-left: -1px;
+  }
+  .content-col p {
+      padding: 0;
+      margin: 30px auto;
+  }
+  .content-col .ctn {
+      margin-left: -100px;
+  }
+  
+  body {
+    background-color: #ffa04d;
+  }
+  
+  .footer {
+    width: 60%;
+    min-height: 100px;
+    padding: 20px 0px;
+    margin: 0;
+    background: #f00822;
+    text-align: center;
+  }
+  .footer p {
+    color: rgb(0, 0, 0);
+    margin: 10px auto;
+  }
+  
+  /* Events */
+  section {
+    width: 80%;
+    margin: 80px auto;
+  }
+  .title {
+    text-align: center;
+    font-size: 4vmin;
+    color: #000000;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .row .col  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .events .row {
+    margin-top: 50px;
+  }
+  h4 {
+    font-size: 3vmin;
+    color: #070707;
+    margin: 20px auto;
+  }
+  p {
+    color: #211e1e;
+    padding: 0px 40px;
+  }
+  .events .ctn {
+    margin-top: 30px;
+  }
+  
+  .explore {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/bg2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+  }
+  .explore {
+    background-image: url('./img/bg2.png');
+  }
+  .explore-content {
+    width: 60%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .explore-content h1 {
+    font-size: 7vmin;
+  }
+  .explore-content .line{
+    margin-bottom: 50px;
+  }
+  .explore-content p {
+    color: rgb(221, 221, 221);
+  }
+  .explore-content .ctn {
+    margin-top: 40px;
+  }
+  
+  .content-col {
+    width: 40%;
+  }
+  .image-col {
+    width: 60%;
+  }
+  .tours .image-gallery{
+    display: flex;
+    background-color: #ffd200;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+  }
+  .image-gallery img {
+    max-width: 300px;
+    margin: 10px;
+  }
+  .content-col h1{
+    font-size: 7vmin;
+    color: #070707;
+  }
+  .content-col .line {
+    margin-left: -1px;
+  }
+  .content-col p {
+    padding: 0;
+    margin: 30px auto;
+  }
+  .content-col .ctn {
+    margin-left: -100px;
+  }
+  
+  /* ------------------- our 7th section social media css style 
+  ------------------------------------ */
+  
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .icon-bar a {
+    width: 18rem;
+    background: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.7rem;
+    padding: 0.5rem;
+    transition: all 0.5s linear;
+    transform: translateX(-14.5rem);
+  }
+  
+  .icon-bar a:hover {
+    transform: translateX(0);
+  }
+  
+  .icon-bar a .fab {
+    padding-left: 1rem;
+    font-size: 3rem;
+    animation: letszoom 3s linear alternate-reverse infinite;
+  }
+  
+  @keyframes letszoom {
+    from {
+      transform: scale(0.6);
+    }
+    to {
+      transform: scale(0.9);
+    }
+  }
+  
+  .icon-bar .twitter {
+    background: #00aced;
+  }
+  
+  .icon-bar .instagram {
+    background: #e128ac;
+  }
+  
+  .icon-bar .youtube {
+    background: #cd201f;
+  }
+  
+  .icon-bar .telegram {
+    background: #3ab019;
+  }
+  
+  .icon-bar .facebook {
+    background: #040404;
+  }
+  
+  .seccion-contacto {
+    background-color: rgb( 19, 22, 41);
+  
+  }
+  .contacto-h h2{
+    margin-left: 50px;
+    font-size: 5em;
+    color: rgb(0, 0, 0);
+    margin-bottom: 4px;
+  
+  }
+  .contacto-h h3{
+    margin-left: 140px;
+    margin-top: 0;
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+  
+  }
+  
+  .contacto-h h3 {
+    margin-left: 60px;
+    margin-top: 0;
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+  }
+  
+  .container-contact {
+    padding: 3em;
+    margin: 0 auto;
+  }
+  
+  .container-contact img{
+    width: 700px;
+    height: 700px;
+    bottom: 0;
+    margin-left: 190px;
+    
+  }
+  
+  .contacto-form h4{
+    color: rgb(0, 0, 0);
+    font-size: 3.9em;
+    margin-left: 10px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 30 ww;
+    margin-top: 2em;    
+  }
+  
+  .form input{
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid aliceblue;
+    color: aliceblue;
+  }
+  
+  .form textarea{
+    height: 150px;
+    background: none;
+    color: aliceblue;
+    padding: 1.5em;
+    border: 1px solid aliceblue;
+    
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 250px;
+    background-color: #ffd200;
+  }
+  
+  .footer-contenido h2{
+    font-size: 2.9em;
+    margin-left: 180px;
+  }
+  .footer-contenido h5{
+    
+    font-size: 1.5em;
+    margin-left: 20px;
+  }
+  
+  .social{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 0.1px;
+  }
+  
+  .social i{
+    font-size: 1.8em;
+  }
+  #submit {
+    padding: 10px 20px;
+    margin: 1em;
+    border: none;
+    text-transform: uppercase;
+    background-color: #ffd200;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px #ffd200;
+  }
+  
+  #submit:hover{
+    background-color: rgb(255, 98, 0);
+    color: black;
+  }
+  
+  .container-contact{
+    background-color: #f00822;
+    color: black;
+  }
+  
+  .contacto-h{
+    background-color: #f00822;
+    color: black;
+  }
+  
+  .form input {
+    color: #000000
+  }
+  
+  .contacto-h {
+    text-align: center;
+  }
+  
+  .contacto-form {
+    text-align: center;
+  }
+
+  body{
+
+    background-image: url(/static/img/peru.jpg);
+    font-family: 'Lora', serif;
+}
+
+.contenedor{
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.carta { 
+    width: 600px;
+    height: 700px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(148, 148, 148, 0.5);
+    border-radius: 10px;
+    margin: 1.5em;
+}
+
+
+.carta-img1 {
+    width: 100%;
+    height: 250px;
+    background-image: url(/static/img/eco.jpg);
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.carta-img2 {
+    width: 100%;
+    height: 250px;
+    background-image: url(/static/img/turi.jpg);
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.carta-img4 {
+    width: 100%;
+    height: 250px;
+    background-image: url(/static/img/histo.jpg);
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.carta-titulo {
+    padding: 5px;
+    font-size: 1.25em;
+    
+}
+
+.carta-titulo h2{
+    font-size: 50px;
+    margin-left: 115px;
+    justify-content: center;
+}
+
+.carta-titulo p {
+    padding: 10px;
+    font-size: 22px;
+}
+
+.carta-proyectos-link{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.carta-proyectos-link a{ 
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.carta-proyectos-link i{
+    font-size: 1.5em;
+}
+
+.carta .detalles-proyecto{
+    
+    margin: 0 auto;
+    margin: len;
+    width: 30%;
+}
+
+.carta .detalles-proyecto a{
+    text-decoration: none;
+    color: rgb( 19, 22, 41);
+    text-transform: uppercase;
+}
+
+.detalles-proyecto-contenido{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.detalles-proyecto-contenido i{
+    font-size:100px;
+}
+.descargar-cv{
+    font-size: 1em; 
+    padding: 5px 14px;
+    background-color: rgb(85, 85, 85);
+    border: none;
+    margin-top: 0px;
+    border-radius: 10px; 
+}
+.descargar-cv:hover { 
+    font-size: 1.29em; 
+    padding: 6px 15px;
+    background-color: rgb(255, 0, 88);
+    transition: ease-in .2s;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}

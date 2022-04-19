@@ -1,0 +1,16 @@
+flask
+pyjwt
+datetime
+uuid
+Flask-SQLAlchemy
+SQLAlchemy
+flask_sqlalchemy
+flask_bcrypt
+wheel
+pandas 
+Flask-WTF 
+flask-login 
+flask_migrate
+mariadb
+flask_jwt
+jwt
