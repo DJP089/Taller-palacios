@@ -908,3 +908,35 @@ html, body {
       color: aliceblue;
       font-size: 3.9em;
   }
+
+
+  table, th, td {
+    margin-left: 140px;
+    border-radius: 5px;
+    border: 4px solid;
+    border-collapse: collapse;
+    border-color: gray;
+    padding: 5px;
+    width: 20%;
+  }
+  
+  h2{
+    color: white;
+    font-size: 50px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+  }
+  
+  
+  th{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: left;
+    padding: 5px
+  }
+  
+  td{
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+  }

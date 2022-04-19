@@ -55,7 +55,37 @@
     </div>
 </div>
 </div>
-
+<section class="tabla">
+    <div>
+        <table id="messages">
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>placa</th>
+                <th>modelo</th>
+                <th>version</th>
+                <th>neumatico</th>
+                <th>color</th>
+                <th>año</th>
+            </tr>
+            {% for carro in carros %}
+            <tr>
+                <td>{{ carro.id}}</td>
+                <td>{{ carro.n_contacto}}</td>
+                <td>{{ carro.placa }}</td>
+                <td>{{ carro.marca}}</td>
+                <td>{{ carro.modelo }}</td>
+                <td>{{ carro.version }}</td>
+                <td>{{ carro.neumatico }}</td>
+                <td>{{ carro.color }}</td>
+                <td>{{ carro.anno }}</td>
+            </tr>
+            {% endfor %}
+            
+        </table>
+        
+    </div>
+</section>
 
 <div class="sobre">
 <img src="../static/img/200.png" alt="GP">

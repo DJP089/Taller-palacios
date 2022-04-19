@@ -55,7 +55,7 @@ def login():
             if bcrypt.check_password_hash(currentUser.dui, dui):
                 login_user(currentUser)
                 if currentUser.rank == "admin":
-                    return redirect(url_for("dash.dashboard"))
+                    return redirect(url_for("dash.home"))
                 return redirect(url_for("site.home2"))
     return render_template("login.html", form=form)
     
