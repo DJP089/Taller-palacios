@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+ <html lang="en">
+<head>
+    <meta charset="UTF-8"> I
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" media="all" href="./static/main/base.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <a href="#" class=logo>
+           <img src="./static/main/img/tallerPalacios.jpeg"alt="company logo" class="logo-img">
+           <p class="logo-nombre">¡Bienvenido!</p> 
+        </a>
+        <nav>
+            <a href="/" class="nav-link">Inicio</a>
+            <a href="#sobre" class="nav-link">Mantenimiento</a>
+            <a href="#contacto" class="nav-link">Taller Online</a>
+        </nav>
+    </header>
+    {% block contents %}{% endblock %}
+</body>
+</html>

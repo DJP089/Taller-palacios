@@ -1,14 +1,14 @@
 
 
-{% block title %}home pagge{% endblock %}
+
 
 {% block contents %}
- <link rel="stylesheet" href="./static/admin/garage.css">
+ <link rel="stylesheet" href="{{ url_for('static', filename= 'admin/garage.css') }}">
  <div>
     <br>
     <br>
 
-        <h2 class="titulo">Mensajes de la comunidad</h2>
+        <h2 class="titulo">Vehículo</h2>
 
     <div>
         <table id="messages">
